@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <link href="static/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="static/css/home.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 border-bottom shadow-sm navbar-layout">
+                <h5 class="my-0 mr-md-auto font-weight-normal text-light">Dailynks Manager</h5>
+                <nav class="my-2 my-md-0 mr-md-3">
+                    <a class="p-2 text-light" href="#">Features</a>
+                    <a class="p-2 text-light" href="#">Enterprise</a>
+                    <a class="p-2 text-light" href="#">Support</a>
+                    <a class="p-2 text-light" href="#">Pricing</a>
+                </nav>
+                <a class="btn btn-outline-light" href="#">Log out</a>
+            </div>
+        </header>
+
+        <section>
+                
+            <div class="container">
+                    <h2>Dailynks</h2>
+                    <div class="panel-group" id="accordion">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Collapsible Group 1</a>
+                                </h4>
+                            </div>
+                            <div id="collapse1" class="panel-collapse collapse in">
+                                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Collapsible Group 2</a>
+                                </h4>
+                            </div>
+                            <div id="collapse2" class="panel-collapse collapse">
+                                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Collapsible Group 3</a>
+                                </h4>
+                            </div>
+                            <div id="collapse3" class="panel-collapse collapse">
+                                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                            </div>
+                        </div>
+                    </div> 
+            </div>
+
+        </section>
+
+    <script>
+        let div1 = document.createElement('div');
+        div1.classList.add('panel');
+        div1.classList.add('panel-default');
+        let div2 = document.createElement('div');
+        div2.classList.add('panel-heading');
+        let tagh4 = document.createElement('h4');
+        tagh4.classList.add('panel-heading');
+
+    </script>
+
+    <script>
+        let div = document.createElement('div');
+        div.style.width = 300;
+        div.style.height = 300;
+        div.style.backgroundColor = '#ffffff';
+        let acc = document.getElementById('accordion');
+       // document.querySelector()
+        
+        acc.appendChild(div);
+
+        function accElem (text) {
+            let div = document.createElement('div');
+            div.id = "collapseThree";
+            div.classList = "collapse";
+
+            return div;
+        }
+
+        fetch('https://data-designlinksbag.wedeploy.io/DesignLinkBagData/299927665602327996')
+            .then(function(response) {
+                return response.json();
+            })
+            .then(function(myJson) {
+                console.log(myJson);
+            });
+    </script>
+    </body>
+</html>
