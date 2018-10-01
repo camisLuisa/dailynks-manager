@@ -23,13 +23,84 @@
                 <a class="btn btn-outline-light" href="#">Log out</a>
             </div>
         </header>
+        <div class="container container-small">
+            <section >
+                <h3>My Dailynks</h3>
+                <div class="list-group">
+                    <button type="button" class="list-group-item list-group-item-action list-group-item-secondary" data-toggle="modal" data-target="#sectionModal">Section</button>
+                    <button type="button" class="list-group-item list-group-item-action" data-toggle="modal" data-target="#itemModal">Item</button>
+                    <button type="button" class="list-group-item list-group-item-action" data-toggle="modal" data-target="#itemModal">Item</button>
+                    <button type="button" class="list-group-item list-group-item-action" data-toggle="modal" data-target="#itemModal">Item</button>
+                    <button type="button" class="list-group-item list-group-item-action" data-toggle="modal" data-target="#itemModal">Item</button>
+                    <button type="button" class="list-group-item list-group-item-action list-group-item-secondary" data-toggle="modal" data-target="#sectionModal">Section</button>
+                    <button type="button" class="list-group-item list-group-item-action" data-toggle="modal" data-target="#itemModal">Item</button>
+                    <button type="button" class="list-group-item list-group-item-action submenu list-group-item-secondary" data-toggle="modal" data-target="#sectionModal">Section</button>
+                    <button type="button" class="list-group-item list-group-item-action submenu" data-toggle="modal" data-target="#itemModal">Item</button>
+                    <button type="button" class="list-group-item list-group-item-action submenu list-group-item-secondary" data-toggle="modal" data-target="#sectionModal">Section</button>
+                    <button type="button" class="list-group-item list-group-item-action submenu" data-toggle="modal" data-target="#itemModal">Item</button>
+                    <button type="button" class="list-group-item list-group-item-action list-group-item-secondary" data-toggle="modal" data-target="#sectionModal">Section</button>
+                    <button type="button" class="list-group-item list-group-item-action" data-toggle="modal" data-target="#itemModal">Item</button>
+                    <button type="button" class="list-group-item list-group-item-action" data-toggle="modal" data-target="#itemModal">Item</button>
+                    <button type="button" class="list-group-item list-group-item-action" data-toggle="modal" data-target="#itemModal">Item</button>
+                    <button type="button" class="list-group-item list-group-item-action" data-toggle="modal" data-target="#itemModal">Item</button>
+                </div>
+            </section>
 
-        <section class="text-center">
-            <div class='btn-group-vertical'>
-                <button type="button" class="btn btn-primary">Section</button>
-                <button type="button" class="btn btn-outline-primary">Item</button>
+            <div class="modal fade" id="sectionModal" tabindex="-1" role="dialog" aria-labelledby="sectionModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="sectionModalLabel">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Title:</label>
+                                <input type="text" class="form-control" id="recipient-name">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                    </div>
+                </div>
             </div>
-        </section>
+
+            <div class="modal fade" id="itemModal" tabindex="-1" role="dialog" aria-labelledby="itemModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="itemModalLabel">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="recipient-name" class="col-form-label">Title:</label>
+                                    <input type="text" class="form-control" id="recipient-name">
+                                </div>
+                                <div class="form-group">
+                                        <label for="recipient-name" class="col-form-label">Link:</label>
+                                        <input type="text" class="form-control" id="recipient-name">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                  
+        </div>
 
     <script>
         let div1 = document.createElement('div');
