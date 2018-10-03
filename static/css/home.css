@@ -6,6 +6,10 @@
     width: 800px;
 }
 
-.submenu {
-    margin-left: 20px;
+.section {
+    background-color: #efefef !important;
+}
+
+.title {
+    margin-bottom: 40px;
 }
